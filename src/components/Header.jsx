@@ -4,13 +4,13 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <a href="">HOME</a>
-        <a href="">ABOUT</a>
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
       </nav>
 
       <nav>
-        <a href="">SHOP</a>
-        <a href="">CONTACT</a>
+        <a href="#">SHOP</a>
+        <Link to="/contact">CONTACT</Link>
       </nav>
     </header>
   );
