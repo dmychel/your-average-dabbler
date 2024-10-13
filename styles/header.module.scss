@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: black;
+  height: 74px;
+  margin-bottom: 1em;
+
+  nav {
+    display: flex;
+    gap: 1em;
+  }
+}
