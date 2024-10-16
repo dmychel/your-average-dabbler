@@ -1,13 +1,29 @@
 .home {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto, auto;
   gap: 0.5em;
+  padding: 1rem;
 }
 
 .card {
-  height: 400px;
-  width: auto;
-  border: 2px solid;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  border: 1px solid;
+
+  h2 {
+    position: absolute;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
 }
