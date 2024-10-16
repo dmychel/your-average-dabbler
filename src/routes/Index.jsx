@@ -4,22 +4,22 @@ export default function Index() {
   const arr = [
     {
       title: "DIGITAL ART",
-      cover: "https://placehold.co/600x400",
+      cover: "/public/media/placeholder-image.webp",
       link: "",
     },
     {
       title: "Photography",
-      cover: "https://placehold.co/600x400",
+      cover: "/public/media/placeholder-image.webp",
       link: "",
     },
     {
       title: "COMMISSIONS",
-      cover: "https://placehold.co/600x400",
+      cover: "/public/media/placeholder-image.webp",
       link: "",
     },
     {
       title: "DESIGN",
-      cover: "https://placehold.co/600x400",
+      cover: "/public/media/placeholder-image.webp",
       link: "",
     },
   ];
@@ -27,12 +27,9 @@ export default function Index() {
   return (
     <div className={styles.home}>
       {arr.map((card, index) => (
-        <div
-          className={styles.card}
-          key={index}
-          style={{ backgroundImage: `url("https://placehold.co/600x400")` }}
-        >
+        <div className={styles.card} key={index}>
           <h2>{card.title}</h2>
+          <img src={card.cover} alt="" />
         </div>
       ))}
     </div>
