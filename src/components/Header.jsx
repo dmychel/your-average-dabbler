@@ -9,6 +9,8 @@ export default function Header() {
         <Link to="/about">ABOUT</Link>
       </nav>
 
+      <img src="/public/media/placeholder-image.webp" alt="" />
+
       <nav>
         <a href="#">SHOP</a>
         <Link to="/contact">CONTACT</Link>
