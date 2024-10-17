@@ -16,13 +16,7 @@
     }
 }
 
-@media (max-width:48rem) {
-    div {
-        columns: 2;
-    }
-}
-
-@media (max-width:32rem) {
+@media (max-width: 1000px) {
     div {
         columns: 1;
     }
