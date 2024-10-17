@@ -11,8 +11,8 @@ export default function Index() {
     },
     {
       title: "Photography",
-      cover: "/media/placeholder-image.webp",
-      route: "",
+      cover: "https://dmychel.github.io/dabbler-media/photography/DSC09353.jpg",
+      route: "/photography",
     },
     {
       title: "COMMISSIONS",
