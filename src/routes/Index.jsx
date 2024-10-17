@@ -31,7 +31,9 @@ export default function Index() {
       {arr.map((card, index) => (
         <Link to={card.route} key={index}>
           <div className={styles.card}>
-            <h2>{card.title}</h2>
+            <div className={styles.hoverDiv}>
+              <h2>{card.title}</h2>
+            </div>
             <img src={card.cover} alt="" />
           </div>
         </Link>
