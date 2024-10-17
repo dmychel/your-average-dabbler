@@ -1,21 +1,41 @@
-import styles from '/styles/artDesign.module.scss'
+import Gallery from "../../components/Gallery";
 
 export default function DigitalArt() {
   const arr = [
-    "whitney-desktop.jpg",
-    "alejandro.png",
-    "mac.png",
-    "marvin.jpg",
-    "neo.png",
-    "biggie.jpg",
-    "TORQUE24.png",
-  ]
+    {
+      picture: "whitney-desktop.jpg",
+      link: "https://dmychel.github.io/dabbler-media/art_design",
+    },
+    {
+      picture: "alejandro.png",
+      link: "https://dmychel.github.io/dabbler-media/art_design",
+    },
+    {
+      picture: "mac.png",
+      link: "https://dmychel.github.io/dabbler-media/art_design",
+    },
+    {
+      picture: "marvin.jpg",
+      link: "https://dmychel.github.io/dabbler-media/art_design",
+    },
+    {
+      picture: "neo.png",
+      link: "https://dmychel.github.io/dabbler-media/art_design",
+    },
+    {
+      picture: "biggie.jpg",
+      link: "https://dmychel.github.io/dabbler-media/art_design",
+    },
+    {
+      picture: "TORQUE24.png",
+      link: "https://dmychel.github.io/dabbler-media/art_design",
+    },
+  ];
+
   return (
-    <div className={styles.gallery}>
+    <div>
       <div>
-        {arr.map((picture, index) => (
-          <img key={index} src={`https://dmychel.github.io/dabbler-media/art_design/${picture}`} alt="" />
-        ))}
+        <Gallery arr={arr} />
       </div>
     </div>
   );
